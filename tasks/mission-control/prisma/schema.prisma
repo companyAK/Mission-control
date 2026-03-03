@@ -1,0 +1,152 @@
+// Prisma Schema for Mission Control Dashboard
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Task {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  agent       String   // ARIA, NOVA, BYTE, PULSE, QUINN, ECHO
+  status      String   @default("backlog") // backlog, in-progress, review, done
+  priority    String   @default("medium") // low, medium, high
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  dueDate     DateTime?
+  completedAt DateTime?
+}
+
+model IncomeStream {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  status      String   @default("Planning") // Planning, Executing, Revenue, Scaling
+  mrr         Float    @default(0) // Monthly Recurring Revenue
+  progress    Int      @default(0) // 0-100
+  focus       Boolean  @default(false) // Current focus stream
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  projects    Project[]
+  clients     Client[]
+}
+
+model Project {
+  id              String        @id @default(cuid())
+  name            String
+  description     String?
+  streamId        String?
+  stream          IncomeStream? @relation(fields: [streamId], references: [id])
+  status          String        @default("active") // active, paused, completed
+  progress        Int           @default(0)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  completedAt     DateTime?
+}
+
+model Idea {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  impact      Int      @default(5) // 1-10
+  timeEstimate Int     @default(5) // Hours to execute
+  priority    Float    @default(5) // Calculated: impact / timeEstimate
+  status      String   @default("backlog") // backlog, scheduled, in-progress, completed
+  scheduledFor DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Client {
+  id          String        @id @default(cuid())
+  name        String
+  email       String?
+  phone       String?
+  streamId    String?
+  stream      IncomeStream? @relation(fields: [streamId], references: [id])
+  stage       String        @default("prospect") // prospect, lead, client, case-study
+  source      String?       // Where they came from
+  mrr         Float         @default(0)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  convertedAt DateTime?
+}
+
+model CronJob {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  schedule    String   // Cron expression
+  agent       String?  // Which agent runs it
+  isActive    Boolean  @default(true)
+  lastRun     DateTime?
+  nextRun     DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Document {
+  id          String   @id @default(cuid())
+  title       String
+  type        String   // report, deliverable, note, etc.
+  agent       String?  // Which agent created it
+  content     String
+  filePath    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AgentMetric {
+  id          String   @id @default(cuid())
+  agent       String   // ARIA, NOVA, BYTE, PULSE, QUINN, ECHO
+  taskId      String?
+  speedScore  Float?   // Time taken vs estimate
+  qualityScore Float?  // 1-10
+  cost        Float?   // In dollars
+  createdAt   DateTime @default(now())
+}
+
+model TimeAllocation {
+  id          String   @id @default(cuid())
+  week        String   // ISO week (e.g., "2026-W10")
+  category    String   // e.g., "Stream #1", "Stream #2", "Full-time job"
+  hours       Float
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AutomationIdea {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  targetMarket String?
+  problem     String?
+  solution    String?
+  priority    Int      @default(5)
+  status      String   @default("backlog")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model IntelligenceReport {
+  id          String   @id @default(cuid())
+  date        DateTime @default(now())
+  title       String
+  content     String
+  suggestions String?  // JSON array of suggested improvements
+  createdAt   DateTime @default(now())
+}

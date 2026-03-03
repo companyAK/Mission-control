@@ -1,17 +1,42 @@
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
+- **Name:** Amadu Kamara
+- **What to call them:** Amadu or AK
+- **Timezone:** UTC
+- **Current Focus:** Building 7+ streams of income
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+## Business Goals
+
+### Stream #1: Service Business Growth Agency
+
+**Model:**
+- Build + host websites (creation fee + monthly hosting)
+- Create and manage ads (project-based charging)
+- Own quality — referrals are the goal
+- Start small, scale with success
+
+**Target:** Low-review service businesses (need visibility, don't care about cost as much)
+**Differentiator:** Simplicity — they run their business, we run their web/ads
+
+**Operational:**
+- AK has design skills but wants agents to execute
+- Use agents (ARIA for design, PULSE for ads, etc.) first
+- Hire real people only when validated and scaled
+- Build repeatable systems/playbooks
+
+**Stage:** Ready to build MVP and start landing clients
+
+### Other Streams (TBD)
+- (6+ more to explore)
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- Values efficiency and delegation
+- Prefers subscription models (Haiku/Sonnet via subscription, reserves API key for Opus)
+- Believes in smart orchestration and learning from successes/failures
+- Wants agents to improve over time, not just execute tasks
+- Clear communicator (tells me when I'm off-track)
 
 ---
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+The more you know, the better you can help.

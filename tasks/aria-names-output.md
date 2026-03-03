@@ -1,0 +1,136 @@
+# Business Name Options: Web + Ads Agency
+
+Generated: March 3, 2026  
+For: AK's Service Business Growth Agency
+
+---
+
+## Top 10 Name Options
+
+### 1. **LeadSprout**
+**Why it works:** "Lead" = customers, "Sprout" = growth. Natural, approachable, immediately communicates we help businesses grow their customer base. Not corporate, feels organic.  
+**Domain:** LeadSprout.com likely available (uncommon combo).  
+**Tagline:** *"Watch your business grow."*
+
+---
+
+### 2. **CallCraft**
+**Why it works:** Service businesses live on phone calls. "Craft" suggests skill + care in building that pipeline. Short, memorable, 2 syllables.  
+**Domain:** CallCraft.com possibly available (check brandable marketplace).  
+**Tagline:** *"We build the calls. You close the deals."*
+
+---
+
+### 3. **BookedSolid**
+**Why it works:** Every service business wants to be "booked solid" — it's their dream state. Instantly relatable. Aspirational but achievable.  
+**Domain:** BookedSolid.com may be taken (common phrase) — check BookedSolidATX.com or BookedSolidCo.com.  
+**Tagline:** *"From slow days to sold-out weeks."*
+
+---
+
+### 4. **TrafficRoot**
+**Why it works:** "Traffic" = customers, "Root" = foundation/source. Suggests we're building sustainable growth from the ground up. Memorable pairing.  
+**Domain:** TrafficRoot.com likely available.  
+**Tagline:** *"Grow from the ground up."*
+
+---
+
+### 5. **PipelineATX**
+**Why it works:** "Pipeline" = steady flow of customers (sales term service owners understand). ATX = Austin pride, local credibility. Can scale nationally as "Pipeline" brand.  
+**Domain:** PipelineATX.com very likely available.  
+**Tagline:** *"Keep your calendar full."*
+
+---
+
+### 6. **RiseLocal**
+**Why it works:** Simple, clear, growth-focused. "Rise" = upward momentum. "Local" = neighborhood credibility. Easy to say, spell, remember.  
+**Domain:** RiseLocal.com possibly taken — try RiseLocal.co or GetRiseLocal.com.  
+**Tagline:** *"Rise above the competition."*
+
+---
+
+### 7. **StormDial**
+**Why it works:** "Storm" = powerful influx. "Dial" = phone calls. Suggests a flood of incoming customer calls. Energetic, action-oriented.  
+**Domain:** StormDial.com likely available (unique combo).  
+**Tagline:** *"Bring the storm."*
+
+---
+
+### 8. **TrafficForge**
+**Why it works:** "Forge" = build/create with strength and skill. Positions you as craftsmen building customer traffic. Masculine energy appeals to trades.  
+**Domain:** TrafficForge.com likely available.  
+**Tagline:** *"We forge customers, you deliver results."*
+
+---
+
+### 9. **LeadLift**
+**Why it works:** "Lift" = elevation, upward growth. Alliteration makes it sticky. Short, punchy, action-forward. Feels like progress.  
+**Domain:** LeadLift.com possibly available (check, popular structure).  
+**Tagline:** *"Lift your business to the next level."*
+
+---
+
+### 10. **BookFlood**
+**Why it works:** "Flood" = overwhelming influx of bookings. Bold, confident promise. "Book" immediately clear for service businesses. Memorable.  
+**Domain:** BookFlood.com likely available (unique combo).  
+**Tagline:** *"More bookings than you can handle."*
+
+---
+
+## Honorable Mentions
+
+### **DialRoot**
+Simple fusion of "calls" + "foundation." LeadSprout's cousin. Domain likely available.
+
+### **TrafficCraft**
+Combines customer acquisition + skillful execution. Clean, professional.
+
+### **RingForge**
+"Ring" = phone calls, "Forge" = building. Trades-friendly language.
+
+---
+
+## Recommendation Tiers
+
+### **Tier 1 (Most Memorable + Clear):**
+1. **BookedSolid** — Instantly relatable dream state
+2. **CallCraft** — Short, sharp, service-focused
+3. **LeadSprout** — Natural growth metaphor
+
+### **Tier 2 (Strong + Unique):**
+4. **TrafficRoot** — Unique positioning, strong metaphor
+5. **PipelineATX** — Local pride + business clarity
+6. **StormDial** — Bold, energetic
+
+### **Tier 3 (Solid Options):**
+7. **BookFlood** — Confident promise
+8. **TrafficForge** — Craftsman positioning
+9. **RiseLocal** — Simple, approachable
+10. **LeadLift** — Alliterative, action-forward
+
+---
+
+## Next Steps
+
+1. **Domain check:** Verify availability on Namecheap/GoDaddy for top 3-5 picks
+2. **Social handles:** Check Instagram, Twitter, Facebook for @handle availability
+3. **Gut check:** Which name *feels* right when you say it out loud?
+4. **Test:** Share top 2-3 with a service business owner — which resonates?
+
+---
+
+## Notes
+
+- Avoided generic terms (Digital, Solutions, Agency, Pro)
+- Prioritized action words and growth metaphors
+- Kept names short (2 words max, easy to say/spell)
+- Austin connection optional (only PipelineATX carries it explicitly)
+- All names position you as approachable, results-focused partner
+
+**Personal take:** My top 3 are **BookedSolid** (if domain available), **CallCraft** (sharp + memorable), and **LeadSprout** (natural growth story). All three immediately communicate value to service businesses.
+
+Let me know if you want variations on any of these or want to explore a different direction!
+
+---
+
+*Generated by ARIA (Designer Agent) for MAX*
