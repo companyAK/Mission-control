@@ -224,28 +224,28 @@ export default function PreFlightPage() {
           </div>
 
           {/* Action Bar */}
-          <div className="fixed bottom-0 left-0 right-0 bg-gray-950/90 border-t border-gray-800 p-6">
-            <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="fixed bottom-0 left-0 right-0 bg-gray-950/90 border-t border-gray-800 p-4 lg:p-6">
+            <div className="max-w-7xl mx-auto flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <div>
-                <p className="text-sm text-gray-400">
+                <p className="text-xs lg:text-sm text-gray-400">
                   {canDeploy
                     ? '✅ All checks passed. Safe to deploy.'
                     : `⏳ ${totalItems - completedItems} items remaining before deployment`}
                 </p>
               </div>
-              <div className="flex gap-3">
-                <button className="px-4 py-2 rounded border border-gray-700 text-gray-300 hover:text-white transition">
+              <div className="flex gap-2 lg:gap-3">
+                <button className="flex-1 lg:flex-initial px-3 lg:px-4 py-2 rounded border border-gray-700 text-gray-300 hover:text-white transition text-sm">
                   Save Draft
                 </button>
                 <button
                   disabled={!canDeploy}
-                  className={`px-6 py-2 rounded font-semibold transition ${
+                  className={`flex-1 lg:flex-initial px-3 lg:px-6 py-2 rounded font-semibold transition text-sm lg:text-base ${
                     canDeploy
                       ? 'bg-green-600 text-white hover:bg-green-700'
                       : 'bg-gray-700 text-gray-500 cursor-not-allowed'
                   }`}
                 >
-                  {canDeploy ? '🚀 Deploy Now' : 'Complete Checklist to Deploy'}
+                  {canDeploy ? '🚀 Deploy Now' : 'Complete to Deploy'}
                 </button>
               </div>
             </div>
