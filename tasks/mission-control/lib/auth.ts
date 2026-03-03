@@ -1,7 +1,5 @@
 import { NextAuthOptions } from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
-import { compare } from 'bcryptjs'
-import { prisma } from './prisma'
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -22,29 +20,19 @@ export const authOptions: NextAuthOptions = {
           return null
         }
 
-        const user = await prisma.user.findUnique({
-          where: {
-            username: credentials.username,
-          },
-        })
+        // Check against hardcoded default credentials
+        const defaultUsername = process.env.DEFAULT_USERNAME || 'amadu'
+        const defaultPassword = process.env.DEFAULT_PASSWORD || 'change-this-password'
 
-        if (!user) {
-          return null
+        if (credentials.username === defaultUsername && credentials.password === defaultPassword) {
+          return {
+            id: '1',
+            name: 'Amadu Kamara',
+            email: 'amadu@companyak.com',
+          }
         }
 
-        const isPasswordValid = await compare(
-          credentials.password,
-          user.password
-        )
-
-        if (!isPasswordValid) {
-          return null
-        }
-
-        return {
-          id: user.id,
-          username: user.username,
-        }
+        return null
       },
     }),
   ],
@@ -52,14 +40,12 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id
-        token.username = user.username
       }
       return token
     },
     async session({ session, token }) {
       if (session.user) {
-        session.user.id = token.id as string
-        session.user.username = token.username as string
+        session.user.name = 'Amadu Kamara'
       }
       return session
     },

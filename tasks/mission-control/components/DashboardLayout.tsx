@@ -27,6 +27,7 @@ const navigation = [
   { name: 'Task Board', href: '/dashboard', icon: CheckSquare },
   { name: 'Projects', href: '/dashboard/projects', icon: FolderKanban },
   { name: 'Team', href: '/dashboard/team', icon: Users },
+  { name: 'Organization', href: '/dashboard/org', icon: Users },
   { name: 'Calendar', href: '/dashboard/calendar', icon: Calendar },
   { name: 'Docs', href: '/dashboard/docs', icon: FileText },
   { name: 'Income', href: '/dashboard/income', icon: DollarSign },
@@ -57,7 +58,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           {/* Logo */}
           <div className="border-b border-gray-800 p-4">
             <h1 className="text-xl font-bold text-blue-500">Mission Control</h1>
-            <p className="text-xs text-gray-400 mt-1">@{session?.user?.username}</p>
+            <p className="text-xs text-gray-400 mt-1">@{session?.user?.name || session?.user?.email || 'Amadu'}</p>
           </div>
 
           {/* Mission Statement */}
