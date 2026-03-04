@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { useSession } from 'next-auth/react'
+import { redirect } from 'next/navigation'
 import useSWR from 'swr'
 import { tasksApi } from '@/lib/api'
 import { Plus, Activity } from 'lucide-react'
@@ -12,6 +14,15 @@ const statuses = ['backlog', 'in-progress', 'review', 'done']
 const fetcher = (url: string) => fetch(url).then(r => r.json())
 
 export default function TaskBoard() {
+  const { status } = useSession()
+
+  if (status === 'unauthenticated') {
+    redirect('/login')
+  }
+
+  if (status === 'loading') {
+    return <div className="flex items-center justify-center h-screen">Loading...</div>
+  }
   const { data: tasks = [], mutate } = useSWR('/api/tasks', fetcher, {
     refreshInterval: 5000,
   })
