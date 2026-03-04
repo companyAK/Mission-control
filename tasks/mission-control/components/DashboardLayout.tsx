@@ -27,6 +27,7 @@ import {
 const MISSION_STATEMENT = "Build automated systems that generate wealth without requiring my presence, so I can provide financial security and unlimited options for my future family."
 
 const navigation = [
+  { name: 'Career', href: '/dashboard/career', icon: Target },
   { name: 'Agent Court', href: '/dashboard/agent-court', icon: Activity },
   { name: 'Proposals', href: '/dashboard/proposals', icon: Lightbulb },
   { name: 'Pre-Flight', href: '/dashboard/preflight', icon: Sparkles },
