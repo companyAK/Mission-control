@@ -20,12 +20,14 @@ import {
   Sparkles,
   LogOut,
   Menu,
-  X
+  X,
+  Activity
 } from 'lucide-react'
 
 const MISSION_STATEMENT = "Build automated systems that generate wealth without requiring my presence, so I can provide financial security and unlimited options for my future family."
 
 const navigation = [
+  { name: 'Agent Court', href: '/dashboard/agent-court', icon: Activity },
   { name: 'Proposals', href: '/dashboard/proposals', icon: Lightbulb },
   { name: 'Pre-Flight', href: '/dashboard/preflight', icon: Sparkles },
   { name: 'Task Board', href: '/dashboard', icon: CheckSquare },
