@@ -1,0 +1,292 @@
+/* COMMAND CENTER COLOR SYSTEM
+   Design by ARIA-WEB
+   Applied globally to all dashboard screens
+*/
+
+:root {
+  /* Background Colors */
+  --bg-deep: #0A0E27;
+  --bg-surface: #131A3A;
+  --bg-surface-elevated: #1A2447;
+  
+  /* Primary Accent */
+  --accent-primary: #00D4FF;
+  --accent-primary-rgb: 0, 212, 255;
+  
+  /* Secondary Accent */
+  --accent-secondary: #B249F8;
+  --accent-secondary-rgb: 178, 73, 248;
+  
+  /* Status Colors */
+  --status-success: #00FFA3;
+  --status-warning: #FFB84D;
+  --status-error: #FF5370;
+  
+  /* Text Colors */
+  --text-primary: #E8F1FF;
+  --text-secondary: #7B92B2;
+  --text-muted: #4A5A7A;
+  
+  /* Glows */
+  --glow-cyan: rgba(0, 212, 255, 0.3);
+  --glow-purple: rgba(178, 73, 248, 0.3);
+  --glow-success: rgba(0, 255, 163, 0.2);
+  
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #0A0E27 0%, #1A2447 100%);
+  --gradient-card: linear-gradient(180deg, #131A3A 0%, #0A0E27 100%);
+  --gradient-accent: linear-gradient(90deg, #00D4FF 0%, #B249F8 100%);
+}
+
+/* Global Overrides */
+body, html {
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+}
+
+/* Dashboard Layout */
+.dashboard-layout {
+  background: linear-gradient(135deg, var(--bg-deep) 0%, #0F1330 50%, var(--bg-deep) 100%);
+}
+
+/* Cards */
+.card, [class*="card"], [class*="panel"] {
+  background: var(--gradient-card);
+  border-color: rgba(0, 212, 255, 0.1);
+}
+
+.card:hover, [class*="card"]:hover, [class*="panel"]:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 20px var(--glow-cyan);
+}
+
+/* Primary Buttons */
+button.primary, [class*="btn-primary"] {
+  background: var(--accent-primary);
+  color: var(--bg-deep);
+  font-weight: 600;
+}
+
+button.primary:hover, [class*="btn-primary"]:hover {
+  box-shadow: 0 0 20px var(--glow-cyan);
+}
+
+/* Secondary Buttons */
+button.secondary, [class*="btn-secondary"] {
+  background: var(--accent-secondary);
+  color: white;
+}
+
+button.secondary:hover, [class*="btn-secondary"]:hover {
+  box-shadow: 0 0 20px var(--glow-purple);
+}
+
+/* Status Indicators */
+.status-active, [class*="active"] {
+  color: var(--status-success);
+  text-shadow: 0 0 10px rgba(0, 255, 163, 0.5);
+}
+
+.status-warning, [class*="warning"] {
+  color: var(--status-warning);
+}
+
+.status-error, [class*="error"] {
+  color: var(--status-error);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+h1 {
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+/* Input Fields */
+input, textarea, select {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: rgba(0, 212, 255, 0.1);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 10px var(--glow-cyan);
+}
+
+/* Borders */
+.border-accent {
+  border-color: var(--accent-primary);
+}
+
+.border-secondary {
+  border-color: var(--accent-secondary);
+}
+
+/* Glowing effects */
+.glow-cyan {
+  box-shadow: 0 0 20px var(--glow-cyan);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px var(--glow-purple);
+}
+
+/* Animation: Pulsing Glow */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px var(--glow-cyan);
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 20px var(--glow-cyan);
+    opacity: 1;
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Animation: Scan Line */
+@keyframes scan-line {
+  0%, 100% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.scan-effect {
+  animation: scan-line 3s linear infinite;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(0, 212, 255, 0.1) 50%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  background: var(--gradient-hero);
+  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+}
+
+/* Sidebar */
+.sidebar {
+  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-deep) 100%);
+  border-right: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.sidebar-item {
+  color: var(--text-secondary);
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--accent-primary);
+  border-left: 3px solid var(--accent-primary);
+}
+
+/* Data Tables */
+table {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+thead {
+  background: var(--bg-surface-elevated);
+  color: var(--accent-primary);
+}
+
+tbody tr:hover {
+  background: rgba(0, 212, 255, 0.05);
+}
+
+/* Charts/Visualizations */
+.chart-bg {
+  background: var(--gradient-card);
+}
+
+.chart-accent {
+  fill: var(--accent-primary);
+  stroke: var(--accent-secondary);
+}
+
+/* Badges */
+.badge {
+  background: var(--bg-surface-elevated);
+  color: var(--accent-primary);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.badge.success {
+  background: rgba(0, 255, 163, 0.1);
+  color: var(--status-success);
+  border-color: rgba(0, 255, 163, 0.3);
+}
+
+.badge.warning {
+  background: rgba(255, 184, 77, 0.1);
+  color: var(--status-warning);
+  border-color: rgba(255, 184, 77, 0.3);
+}
+
+.badge.error {
+  background: rgba(255, 83, 112, 0.1);
+  color: var(--status-error);
+  border-color: rgba(255, 83, 112, 0.3);
+}
+
+/* Progress Bars */
+.progress-bar {
+  background: var(--bg-surface-elevated);
+}
+
+.progress-fill {
+  background: var(--gradient-accent);
+  box-shadow: 0 0 10px var(--glow-cyan);
+}
+
+/* Links */
+a {
+  color: var(--accent-primary);
+}
+
+a:hover {
+  text-shadow: 0 0 10px var(--glow-cyan);
+}
+
+/* Accessibility: High contrast mode */
+@media (prefers-contrast: more) {
+  :root {
+    --text-primary: #FFFFFF;
+    --accent-primary: #00FFFF;
+    --accent-secondary: #FF00FF;
+  }
+}
+
+/* Dark mode (already applied) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .glow-cyan, .glow-purple, .pulse-glow {
+    box-shadow: none;
+  }
+}
