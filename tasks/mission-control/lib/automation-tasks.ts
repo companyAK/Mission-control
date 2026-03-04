@@ -152,7 +152,7 @@ export async function taskAgentEfficiencyScoring() {
 /**
  * TASK 6: Progress Metrics Calculation (Every 4 hours)
  * Status: Ready to implement
- * Schedule: 0 */4 * * * (cron - every 4 hours)
+ * Schedule: every 4 hours (cron: 0 at each 4h interval)
  * What it does:
  *   - Calculates % progress for Stream #1 (Agency)
  *   - Tracks: prospects found, pitches sent, deals closed
@@ -238,21 +238,10 @@ export async function taskDatabaseBackupCheck() {
  * SCHEDULE: How to enable all tasks
  *
  * Option 1: Node-cron (Built into app)
- * ```javascript
- * const cron = require('node-cron');
- *
- * // Daily health check at 06:00 UTC
- * cron.schedule('0 6 * * *', taskDailyHealthCheck);
- *
- * // Weekly learning report Monday 08:00 UTC
- * cron.schedule('0 8 ? * MON', taskWeeklyLearningReport);
- *
- * // Agent efficiency daily at 20:00 UTC
- * cron.schedule('0 20 * * *', taskAgentEfficiencyScoring);
- *
- * // Progress metrics every 4 hours
- * cron.schedule('0 */4 * * *', taskProgressMetricsCalculation);
- * ```
+ * - Daily health check at 06:00 UTC
+ * - Weekly learning report Monday 08:00 UTC
+ * - Agent efficiency daily at 20:00 UTC
+ * - Progress metrics every 4 hours
  *
  * Option 2: External cron service
  * - Use GitHub Actions (free)
