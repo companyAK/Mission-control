@@ -181,3 +181,36 @@ You have a **25-person company on call**, paying only for the ones actively work
 No overhead. No unused capacity. Just **the right people, at the right time, doing the right work.**
 
 Ready to start. 🚀
+
+---
+
+## 2026-03-04 Update: New Roles Added (Revenue-Enabling Specialists)
+
+### ATLAS - Sales Specialist
+**Spawn:** When you have 5+ prospects to pitch  
+**Task:** Close deals (not build them)  
+**Expertise:** Sales psychology, negotiation, pitch techniques, CRM management  
+**Expected:** Revenue increase of 40%+ vs Amadu pitching himself
+
+### LEDGER - Finance & Operations  
+**Spawn:** When first 2 Agency clients signed  
+**Task:** Track money flow across all 7 streams  
+**Expertise:** P&L analysis, profitability tracking, financial forecasting  
+**Expected:** Clear visibility into which streams work, which don't
+
+### COMPASS - Product Manager  
+**Spawn:** When Stream #2 launches (Q2 2026)  
+**Task:** Decide what to build, prioritize resources  
+**Expertise:** Product strategy, market research, feature prioritization  
+**Expected:** Avoid wasted effort, focus on high-impact work
+
+---
+
+## Cross-Stream Principle
+
+All new agents work across ALL 7 income streams, not just Agency:
+- ATLAS sells websites, digital products, FBA bundles, real estate, Airbnb
+- LEDGER tracks revenue for all 7 simultaneously
+- COMPASS prioritizes resources across all 7 opportunistically
+
+**Same team, infinite flexibility.**

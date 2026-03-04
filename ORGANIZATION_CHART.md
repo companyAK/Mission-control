@@ -196,3 +196,82 @@ All coordinated by MAX. All working toward **one mission:**
 5. Iterate & improve
 
 **This is your operating system for scaling.**
+
+---
+
+## Tier 2.5: Critical Revenue-Enabling Specialists (Added 2026-03-04)
+
+**NEW ROLES (Spawned as needed per project):**
+
+### 🎯 **ATLAS** (Sales Specialist)
+
+**Role:** Close deals across ALL 7 income streams
+
+**Responsibilities:**
+- Pitch prospects (websites, digital products, Amazon FBA bundles, real estate, Airbnb)
+- Negotiate terms & pricing
+- Handle objections
+- Close signed contracts
+- Generate referral momentum
+
+**Why Critical:** You can build the best products, but they don't generate revenue without someone closing deals. ATLAS eliminates the need for Amadu to pitch.
+
+**Spawn When:** First 5 prospects identified for Agency (Stream #1)
+
+---
+
+### 💰 **LEDGER** (Finance & Operations Lead)
+
+**Role:** Track financial health across ALL 7 streams
+
+**Responsibilities:**
+- Calculate MRR (Monthly Recurring Revenue) per stream
+- Track profitability (revenue - costs)
+- P&L reporting by stream
+- Identify which streams are hot vs cold
+- Tax planning + financial recommendations
+
+**Why Critical:** You can't optimize what you don't measure. LEDGER gives you financial visibility without Amadu doing spreadsheets.
+
+**Spawn When:** Stream #1 gets first 2 paying clients
+
+---
+
+### 🛣️ **COMPASS** (Product Manager)
+
+**Role:** Strategically prioritize across ALL 7 streams
+
+**Responsibilities:**
+- Decide what to build (which stream gets resources this month?)
+- Define standardized offerings (reduce customization)
+- Identify common patterns across streams
+- Create roadmaps for each stream
+- Measure product-market fit
+
+**Why Critical:** Without product strategy, you waste effort building the wrong things. COMPASS decides priorities so Amadu doesn't have to.
+
+**Spawn When:** Stream #1 launches + Stream #2 planning begins (Q2 2026)
+
+---
+
+## Updated Team Size
+
+```
+Tier 1:        1 (MAX)
+Tier 2:        6 (ARIA, NOVA, BYTE, PULSE, QUINN, ECHO)
+Tier 2.5:      3 (ATLAS, LEDGER, COMPASS) ← NEW
+Tier 3:       18 (3 specialists per head)
+─────────────────
+Total:        28 agents
+```
+
+**Timeline to Spawn:**
+- ATLAS: Week 1 of March (ready to pitch 10 prospects)
+- LEDGER: When first 2 Agency clients sign
+- COMPASS: When Stream #2 launches (Q2 2026)
+
+**Future Roles (Q2-Q3 2026):**
+- ANCHOR: Client Success (keep customers happy, generate referrals)
+- INSIGHT: Analytics (measure what works, optimize performance)
+
+**All roles cross-stream.** Same team, maximum flexibility.
