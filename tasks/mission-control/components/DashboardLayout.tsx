@@ -26,6 +26,7 @@ import {
 const MISSION_STATEMENT = "Build automated systems that generate wealth without requiring my presence, so I can provide financial security and unlimited options for my future family."
 
 const navigation = [
+  { name: 'Proposals', href: '/dashboard/proposals', icon: Lightbulb },
   { name: 'Pre-Flight', href: '/dashboard/preflight', icon: Sparkles },
   { name: 'Task Board', href: '/dashboard', icon: CheckSquare },
   { name: 'Projects', href: '/dashboard/projects', icon: FolderKanban },
